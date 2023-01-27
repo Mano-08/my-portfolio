@@ -1,0 +1,14 @@
+.tree {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  .leaf {
+    -webkit-clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+    clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+  }
+  .trunk {
+    z-index: 1;
+    margin: -10% auto 0 auto;
+  }
+}
