@@ -4,12 +4,24 @@
   padding-top: 4.5em;
   display: flex;
   flex-direction: column;
-  background-color: aqua;
+  background: linear-gradient(
+    to top,
+    aqua 0%,
+    aqua 20%,
+    rgb(0, 243, 243) 20%,
+    rgb(0, 243, 243) 40%,
+    rgb(0, 232, 232) 40%,
+    rgb(0, 232, 232) 60%,
+    rgb(0, 222, 222) 60%,
+    rgb(0, 222, 222) 80%,
+    rgb(0, 212, 212) 80%,
+    rgb(0, 212, 212) 100%
+  );
 }
 
 .aboutMeContainer {
   display: flex;
-  height: 85vh;
+  height: 95vh;
   width: 100%;
   flex-direction: row;
 
@@ -31,7 +43,7 @@
   }
   @keyframes floatSmallCloud {
     from {
-      right: 25%;
+      right: -18%;
     }
     to {
       right: 100%;
@@ -41,7 +53,7 @@
     position: absolute;
     top: 30vh;
     width: 15vw;
-    right: 25%;
+    right: -18%;
     height: auto;
     animation: floatSmallCloud 120s infinite linear;
   }
@@ -52,13 +64,13 @@
 
   @keyframes floatBalloonOrange {
     0% {
-      transform: translateY(2vh);
+      transform: translateY(1vh);
     }
     50% {
       transform: translateY(0vh);
     }
     100% {
-      transform: translateY(2vh);
+      transform: translateY(1vh);
     }
   }
   @keyframes floatBalloonYellow {
@@ -66,7 +78,7 @@
       transform: translateY(0);
     }
     50% {
-      transform: translateY(3vh);
+      transform: translateY(2vh);
     }
     100% {
       transform: translateY(0vh);
@@ -82,7 +94,7 @@
       left: 25vw;
       height: 30vh;
       width: 30vh;
-      animation: floatBalloonYellow infinite 5s linear;
+      animation: floatBalloonYellow infinite 6s linear;
     }
 
     #orangeBalloon {
@@ -91,7 +103,7 @@
       left: 12.5vw;
       height: 40vh;
       width: 40vh;
-      animation: floatBalloonOrange infinite 5s linear;
+      animation: floatBalloonOrange infinite 6s linear;
     }
   }
 }
@@ -102,6 +114,14 @@
   }
   to {
     right: 115%;
+  }
+}
+@keyframes bigCar {
+  from {
+    left: -15%;
+  }
+  to {
+    left: 105%;
   }
 }
 
@@ -119,7 +139,15 @@
     width: auto;
     bottom: 2vh;
     right: -5%;
-    animation: drivingCar infinite 40s linear;
+    animation: drivingCar infinite 35s linear;
+  }
+  #bigCar {
+    position: absolute;
+    height: 10vh;
+    width: auto;
+    bottom: 2vh;
+    left: -5%;
+    animation: bigCar infinite 40s linear;
   }
   #triangle {
     position: absolute;
