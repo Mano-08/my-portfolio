@@ -1,25 +1,25 @@
 .navbar {
   position: fixed;
-  z-index: 5;
+  z-index: 15;
   height: 4.5em;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(13, 0, 30, 0.877);
+  // background-color: rgba(13, 0, 30, 0.877);
   .navLogo {
-    margin-left: 5%;
+    margin-left: 7.5%;
     font-size: 2rem;
     font-family: "M PLUS Rounded 1c", sans-serif;
-    color: rgb(242, 242, 242);
+    color: rgb(37, 3, 3);
   }
   .navLinks {
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    margin-right: 5%;
+    margin-right: 7.5%;
     width: 11.5em;
     li {
       width: 2.5em;
